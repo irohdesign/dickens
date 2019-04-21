@@ -3,6 +3,9 @@
 colors 
 
 parchment background: #F4F1EF
+warm brown: #5F3B1F
+grey sale: #D8D8D8
+dark grey buy now: #4A4A4A
 
 */
 
@@ -55,37 +58,182 @@ img {
     color: black;
 }
 
+/* newest-book */
+
+#newest-book {
+    padding: 40px;
+}
+
+#cover-division img {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border: solid 3px black;
+}
+
+#book-title {
+    font-size: 75px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#newest-book #sub-heading {
+    background: #5F3B1F;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin: 30px auto;
+}
+
+#book-description {
+    margin: auto;
+    padding: 100px;
+}
+
+#book-description p {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+blockquote {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 15px 30px 30px;
+    text-align: center;
+}
+
+.sale-container {
+    border: solid 1px #D8D8D8;
+}
+
+#buy-now {
+    background: #4A4A4A;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sale-box {
+    font-size: 22px;
+    text-align: center;
+    padding: 5px;
+}
+
+.sale-box:nth-child(2) {
+    border-right: solid 1px #D8D8D8;
+}
+
+
+
 /* media queries */
 
-@media only screen and (max-width: 1024px) {
-    #author-name {
+@media only screen and (max-width: 1550px) {
+    header {
         top: 50px;
+        text-align: center;
     }
 
     #author-name p {
         text-align: center;
         font-size: 18px;
         position: relative;
-        top: 15px;
+        top: -65px;
         left: 0;
         width: 75%;
         margin: auto;
     }
 
-    #top-nav {
-        top: 20px;
-    }
-
     #navigation-links {
         font-size: 18px;
-        border-top: double 3px black;
-        border-bottom: double 3px black;
+        top: -40px;
     }
+
+    #newest-book {
+        position: relative;
+        margin-top: -60px;
+        padding: 10px;
+    }
+
+    #book-description p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #newest-book #sub-heading {
+        font-size: 20px;
+    }
+
+    #book-title {
+        font-size: 60px;
+        margin-top: 30px;
+    }
+
+    #book-description {
+        text-align: center;
+        padding: 10px 50px;
+    }
+
+    .sale-box {
+        border: solid 1px #D8D8D8;
+    }
+
+    #buy-now {
+        border-color: #4A4A4A;
+    }
+}
+
+@media only screen and (max-width: 1549px) {
+    header {
+        top: 50px;
+        text-align: center;
+    }
+
+    #author-name p {
+        text-align: center;
+        font-size: 18px;
+        position: relative;
+        top: -65px;
+        left: 0;
+        width: 75%;
+        margin: auto;
+    }
+
+
+    #newest-book {
+        position: relative;
+        top: 100px;
+        padding: 10px;
+    }
+
+    #newest-book #sub-heading {
+        font-size: 20px;
+    }
+
+    #book-title {
+        font-size: 60px;
+        margin-top: 30px;
+    }
+
+    #book-description {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .sale-box {
+        border: solid 1px #D8D8D8;
+    }
+
+    #buy-now {
+        border-color: #4A4A4A;
+    }
+
 }
 
 
 @media only screen and (max-width: 600px) {
-    #author-name {
+    header {
         top: 50px;
     }
 
@@ -93,19 +241,48 @@ img {
         text-align: center;
         font-size: 18px;
         position: relative;
-        top: 15px;
+        top: -10px;
         left: 0;
         width: 75%;
         margin: auto;
     }
 
-    #top-nav {
-        top: 20px;
-    }
-
     #navigation-links {
         font-size: 18px;
-        border-top: double 3px black;
-        border-bottom: double 3px black;
+        margin-top: 60px;
+        background: #4A4A4A;
+    }
+
+    #navigation-links a {
+        color: white;
+        padding: 5px 10px;
+    }
+
+    #newest-book {
+        position: relative;
+        top: 100px;
+        padding: 10px;
+    }
+
+    #newest-book #sub-heading {
+        font-size: 20px;
+    }
+
+    #book-title {
+        font-size: 60px;
+        margin-top: 30px;
+    }
+
+    #book-description {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .sale-box {
+        border: solid 1px #D8D8D8;
+    }
+
+    #buy-now {
+        border-color: #4A4A4A;
     }
   }
