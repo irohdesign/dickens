@@ -31,9 +31,6 @@ img {
     position: relative;
 }
 
-#author-name img {
-}
-
 #author-name p {
     position: absolute;
     top: 150px;
@@ -125,7 +122,48 @@ blockquote {
     border-right: solid 1px #D8D8D8;
 }
 
+/* join  */
 
+#join {
+    background: #5F3B1F;
+    padding: 70px 40px;
+    color: white;
+    text-align: center;
+}
+
+#join-button {
+    background: transparent;
+    color: white;
+    border: solid 1px white;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+
+#join-button:hover {
+    background: white;
+    color: #5F3B1F;
+}
+
+#join p {
+    font-size: 18px;
+    margin: 20px auto 15px;
+}
+
+/* footer */
+
+footer {
+    background: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 
 /* media queries */
 
@@ -154,6 +192,7 @@ blockquote {
         position: relative;
         margin-top: -60px;
         padding: 10px;
+        margin-bottom: 120px;
     }
 
     #book-description p {
@@ -227,6 +266,14 @@ blockquote {
 
     #buy-now {
         border-color: #4A4A4A;
+    }
+
+    #join-button {
+        font-size: 25px;
+        padding: 10px;
+        width: 80%;
+        display: block;
+        margin: auto;
     }
 
 }
